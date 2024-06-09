@@ -18,10 +18,42 @@ To install WaveLip, follow these steps:
 1. Download the fully prepared project:
 [Full Project](https://drive.google.com/file/d/1cdCYiqY-9IYiFrFOTtWYMBBIbrltALYc/view?usp=drive_link)
 
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. For each model, you will need a separate environment, otherwise, there will be a lot of dependency conflicts and you won't be able to run the application.
+
+#### Wav2Lip Environment:
+```
+conda create --name Wav2Lip python=3.11.9
+conda activate Wav2Lip
+pip install numpy
+pip install librosa
+pip install opencv-python
+pip install tqdm
+pip install batch_face
+pip install ffmpeg-python
+pip install pyaudio
+pip install yt-dlp
+pip install torch==2.3.0+cu118 torchvision==0.18.0+cu118 torchaudio==2.3.0 -f https://download.pytorch.org/whl/torch_stable.html
+```
+After installing all the packages, download FFmpeg (link for the word FFmpeg: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)) and yt-dlp (link for the word yt-dlp: [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)) and make sure they are added to your system's PATH environment variable.
+
+#### Tortoise Environment:
+```
+conda create --name Tortoise python=3.9 numba inflect
+conda activate Tortoise
+```
+Install pytorch with the command provided here: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+```
+pip install rotary-embedding-torch progressbar einops scipy unidecode transformers==4.31.0
+```
+If you have downloaded my fully prepared project, you don't need this command. If not, execute it as well:
+```git clone https://github.com/neonbjb/tortoise-tts.git```
+```
+python setup.py install
+pip install librosa==0.10.2.post1 audioread>=2.1.9 decorator>=4.3.0 lazy-loader>=0.1 msgpack>=1.0 pooch>=1.1 scikit-learn>=0.20.0 soxr>=0.3.2
+```
+
+
+
 
 ## Usage
 
