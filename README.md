@@ -86,7 +86,7 @@ To create a full-fledged deepfake, you need to:
 
      Sometimes Tortoise may produce a flawed output. You can regenerate any bad clips by rerunning `read.py` with the `--regenerate` argument.
 
-2. To obtain your deepfake, open Wav2Lip.ipynb and follow all the instructions (You should already have an audio recording with a voice from Tortoise).
+2. To obtain your deepfake, open `Wav2Lip.ipynb` and follow all the instructions (You should already have an audio recording with a voice from Tortoise).
 
 ## Features
 
