@@ -64,12 +64,26 @@ pip install librosa==0.10.2.post1 audioread>=2.1.9 decorator>=4.3.0 lazy-loader>
 
 ## Usage
 
-Here's a basic example of how to use WaveLip:
+To create a full-fledged deepfake, you need to:
 
-1. Scrape video and audio from YouTube:
-    ```bash
-    python scrape_youtube.py --url "https://www.youtube.com/watch?v=example"
-    ```
+1. Use Tortoise to obtain an audio file voicing your text for the deepfake video. To use your voice for text voicing, simply add the folder with voice audio files to the tortoise-voices directory.
+
+   Instructions for text voicing:
+   - `do_tts.py`: This script allows you to speak a single phrase with one or more voices.
+     ```bash
+     python tortoise/do_tts.py --text "I'm going to speak this" --voice random --preset fast
+     ```
+   - `faster_inference_read.py`: This script provides tools for reading large amounts of text.
+     ```bash
+     python tortoise/read_fast.py --textfile <your text to be read> --voice random
+     ```
+   - `read.py`: This script provides tools for reading large amounts of text.
+     ```bash
+     python tortoise/read.py --textfile <your text to be read> --voice random
+     ```
+     This will break up the text file into sentences and then convert them to speech one at a time. It will output a series of spoken clips as they are generated. Once all the clips are generated, it will combine them into a single file and output that as well.
+
+     Sometimes Tortoise may produce a flawed output. You can regenerate any bad clips by rerunning `read.py` with the `--regenerate` argument.
 
 2. Generate a deepfake video:
     ```python
@@ -102,22 +116,10 @@ Here's a basic example of how to use WaveLip:
 - Integration of [Tortoise](https://github.com/neonbjb/tortoise-tts/tree/main) for text-to-speech
 - Scripts for scraping videos and audio from YouTube
 
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your_feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your_feature`)
-5. Create a new Pull Request
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
 
-Your Name - [your_email@example.com](mailto:your_email@example.com)
-
-Project Link: [https://github.com/your_username/WaveLip](https://github.com/your_username/WaveLip)
+Artur Mistiuk - [mistiuk.artur@gmail.com](mailto:mistiuk.artur@gmail.com)
