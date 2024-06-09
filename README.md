@@ -43,10 +43,15 @@ conda activate Tortoise
 ```
 Install pytorch with the command provided here: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
 ```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+```
+```
 pip install rotary-embedding-torch progressbar einops scipy unidecode transformers==4.31.0
 ```
 If you have downloaded my fully prepared project, you don't need this command. If not, execute it as well:
-```git clone https://github.com/neonbjb/tortoise-tts.git```
+```
+git clone https://github.com/neonbjb/tortoise-tts.git```
+```
 ```
 python setup.py install
 pip install librosa==0.10.2.post1 audioread>=2.1.9 decorator>=4.3.0 lazy-loader>=0.1 msgpack>=1.0 pooch>=1.1 scikit-learn>=0.20.0 soxr>=0.3.2
