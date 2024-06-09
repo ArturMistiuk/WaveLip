@@ -66,7 +66,7 @@ pip install librosa==0.10.2.post1 audioread>=2.1.9 decorator>=4.3.0 lazy-loader>
 
 To create a full-fledged deepfake, you need to:
 
-1. Use Tortoise to obtain an audio file voicing your text for the deepfake video. To use your voice for text voicing, simply add the folder with voice audio files to the tortoise-voices directory.
+1. Use Tortoise to obtain an audio file voicing your text for the deepfake video. To use your voice for text voicing, simply add the folder with voice audio files to the `tortoise-voices` directory.
 
    Instructions for text voicing:
    - `do_tts.py`: This script allows you to speak a single phrase with one or more voices.
