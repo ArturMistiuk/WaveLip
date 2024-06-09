@@ -16,7 +16,7 @@ WaveLip - a fully autonomous deepfake creator on your computer! It combines the 
 To install WaveLip, follow these steps:
 
 1. Download the fully prepared project:
-[Full Project][[https://github.com/Rudrabha/Wav2Lip](https://drive.google.com/file/d/1cdCYiqY-9IYiFrFOTtWYMBBIbrltALYc/view?usp=drive_link)
+[Full Project](https://drive.google.com/file/d/1cdCYiqY-9IYiFrFOTtWYMBBIbrltALYc/view?usp=drive_link)
 
 2. Install the required dependencies:
     ```bash
