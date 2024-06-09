@@ -34,7 +34,7 @@ pip install pyaudio
 pip install yt-dlp
 pip install torch==2.3.0+cu118 torchvision==0.18.0+cu118 torchaudio==2.3.0 -f https://download.pytorch.org/whl/torch_stable.html
 ```
-After installing all the packages, download FFmpeg (link for the word FFmpeg: [https://ffmpeg.org/download.html](https://ffmpeg.org/download.html)) and yt-dlp (link for the word yt-dlp: [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)) and make sure they are added to your system's PATH environment variable.
+After installing all the packages, download [FFmpeg](https://ffmpeg.org/download.html)) and [yt-dlp](https://github.com/yt-dlp/yt-dlp)) and make sure they are added to your system's PATH environment variable.
 
 #### Tortoise Environment:
 ```
