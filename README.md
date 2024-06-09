@@ -85,29 +85,7 @@ To create a full-fledged deepfake, you need to:
 
      Sometimes Tortoise may produce a flawed output. You can regenerate any bad clips by rerunning `read.py` with the `--regenerate` argument.
 
-2. Generate a deepfake video:
-    ```python
-    from wav2lip import Wav2Lip
-    from tortoise import Tortoise
-    
-    # Example code for creating a deepfake
-    # Assuming you have preprocessed your input data and loaded models
-    
-    # Load models
-    wav2lip_model = Wav2Lip()
-    tortoise_model = Tortoise()
-    
-    # Generate lip-synced video
-    video_path = "path/to/your/video.mp4"
-    audio_path = "path/to/your/audio.wav"
-    output_path = "path/to/output/deepfake.mp4"
-    
-    wav2lip_model.generate(video_path, audio_path, output_path)
-    
-    # Generate speech using Tortoise
-    text = "Your text to generate speech"
-    tortoise_model.text_to_speech(text, output_path="path/to/output/audio.wav")
-    ```
+2. To obtain your deepfake, open Wav2Lip.ipynb and follow all the instructions (You should already have an audio recording with a voice from Tortoise).
 
 ## Features
 
