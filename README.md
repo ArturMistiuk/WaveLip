@@ -5,9 +5,10 @@ WaveLip - a fully autonomous deepfake creator on your computer! It combines the 
 ## Table of Contents
 
 - [Installation](#installation)
+  - [Wav2Lip Environment](#wav2lip-environment)
+  - [Tortoise Environment](#tortoise-environment)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
 
